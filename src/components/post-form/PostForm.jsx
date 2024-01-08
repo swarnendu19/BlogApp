@@ -51,7 +51,7 @@ export default function PostForm({ post }) {
 
     const slugTransform = useCallback((value) => {
         if (value && typeof value === "string")
-            return value
+            return value.title
                 .trim()
                 .toLowerCase()
                 .replace(/[^a-zA-Z\d\s]+/g, "-")
